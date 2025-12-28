@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e3f2fd 0%, #f8bbd9 50%, #e3f2fd 100%);
+    min-height: 100vh;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+/* main message box */
+.main-message {
+   margin: 120px auto 35px auto;
+}
+/* benefits box - light blue theme */
+.benefits-box {
+   margin: 36px auto;
+   background: rgba(209, 239, 247, 0.8);
+   border-left: 4px solid #ff69b4;
+}
+.benefits-box h3 {
+    color: #e91e63;
+    margin-bottom: 15px;
+}
+
+.benefits-box ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.benefits-box li {
+    margin: 8px 0;
+    color: #555;
+}
+/* Action buttons box - Blue theme */
+.action-box {
+    margin: 30px auto;
+    background: rgba(240, 248, 255, 0.95);
+    border-left: 4px solid #2196f3;
+}
+
+.action-box button {
+    margin: 10px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.action-box button:first-of-type {
+    background: #4caf50;
+    color: white;
+}
+
+.action-box button:first-of-type:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+.action-box button:last-of-type {
+    background: #f44336;
+    color: white;
+}
+
+.action-box button:last-of-type:hover {
+    background: #da190b;
+    transform: scale(1.05);
+}
+
+/* Terms box - Green theme */
+.terms-box {
+    margin: 30px auto 50px auto;
+    background: rgba(248, 255, 240, 0.95);
+    border-left: 4px solid #8bc34a;
+}
+
+.unique-text {
+    color: #666;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* Content box styling */
+.content {
+    position: relative;
+    z-index: 10;  /* In front of flowers */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    margin: 100px auto;
+    max-width: 600px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2e7d32;
+    font-family: Georgia, serif;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+p {
+    color: #424242;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.overlay {
+position: fixed;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+background: #FFE4C4;
+z-index: 9999;
+display: flex;
+}
+
+.overlay.hidden {
+    display: none;
+}
+
+.overlay-content {
+    border-radius: 100px;
+    text-align: center;
+}
+
+/* fireworksssssss */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.overlay-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.firework {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: yellow;
+    border-radius: 50%;
+    animation: explode 0.8s ease-out forwards;
+}
+
+@keyframes explode {
+    0% { transform: translate(0,0); opacity: 1; }
+    100% { transform: translate(var(--x), var(--y)); opacity: 0; }
+}
+
+/* Position all 40 flowers randomly around the background */
+.flower {
+    position: absolute;
+    z-index: 1;  /* Behind content */
+    animation-name: floatUp;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.flower1 { top: 25px; left: 5%; transform: scale(0.4) rotate(25deg); }
+.flower2 { top: 50px; left: 15%; transform: scale(0.5) rotate(-15deg); }
+.flower3 { top: 75px; left: 25%; transform: scale(0.6) rotate(45deg); }
+.flower4 { top: 100px; left: 35%; transform: scale(0.4) rotate(-30deg); }
+.flower5 { top: 150px; left: 45%; transform: scale(0.5) rotate(60deg); }
+.flower6 { top: 175px; left: 55%; transform: scale(0.6) rotate(-45deg); }
+.flower7 { top: 175px; left: 65%; transform: scale(0.4) rotate(90deg); }
+.flower8 { top: 200px; left: 75%; transform: scale(0.5) rotate(-60deg); }
+.flower9 { top: 225px; left: 85%; transform: scale(0.6) rotate(120deg); }
+.flower10 { top: 250px; left: 95%; transform: scale(0.4) rotate(-90deg); }
+
+.flower11 { top: 40px; left: 10%; transform: scale(0.5) rotate(-60deg); }
+.flower12 { top: 90px; left: 20%; transform: scale(0.6) rotate(-70deg); }
+.flower13 { top: 140px; left: 30%; transform: scale(0.4) rotate(-40deg); }
+.flower14 { top: 190px; left: 40%; transform: scale(0.5) rotate(-93deg); }
+.flower15 { top: 240px; left: 50%; transform: scale(0.6) rotate(-80deg); }
+.flower16 { top: 290px; left: 60%; transform: scale(0.4) rotate(-48deg); }
+.flower17 { top: 340px; left: 70%; transform: scale(0.5) rotate(-36deg); }
+.flower18 { top: 390px; left: 80%; transform: scale(0.6) rotate(-40deg); }
+.flower19 { top: 440px; left: 90%; transform: scale(0.4) rotate(-92deg); }
+.flower20 { top: 490px; left: 5%; transform: scale(0.5) rotate(-24deg); }
+
+.flower21 { top: 60px; left: 8%; transform: scale(0.6) rotate(45deg); }
+.flower22 { top: 110px; left: 18%; transform: scale(0.4) rotate(-30deg); }
+.flower23 { top: 160px; left: 28%; transform: scale(0.5) rotate(75deg); }
+.flower24 { top: 210px; left: 38%; transform: scale(0.6) rotate(-45deg); }
+.flower25 { top: 260px; left: 48%; transform: scale(0.4) rotate(120deg); }
+.flower26 { top: 310px; left: 58%; transform: scale(0.5) rotate(-75deg); }
+.flower27 { top: 360px; left: 68%; transform: scale(0.6) rotate(30deg); }
+.flower28 { top: 410px; left: 78%; transform: scale(0.4) rotate(-120deg); }
+.flower29 { top: 450px; left: 88%; transform: scale(0.5) rotate(90deg); }
+.flower30 { top: 510px; left: 15%; transform: scale(0.6) rotate(-15deg); }
+
+.flower31 { top: 80px; left: 12%; transform: scale(0.4) rotate(60deg); }
+.flower32 { top: 130px; left: 22%; transform: scale(0.5) rotate(-90deg); }
+.flower33 { top: 180px; left: 32%; transform: scale(0.6) rotate(135deg); }
+.flower34 { top: 230px; left: 42%; transform: scale(0.4) rotate(-45deg); }
+.flower35 { top: 280px; left: 52%; transform: scale(0.5) rotate(75deg); }
+.flower36 { top: 330px; left: 62%; transform: scale(0.6) rotate(-105deg); }
+.flower37 { top: 380px; left: 72%; transform: scale(0.4) rotate(45deg); }
+.flower38 { top: 430px; left: 82%; transform: scale(0.5) rotate(-60deg); }
+.flower39 { top: 480px; left: 92%; transform: scale(0.6) rotate(105deg); }
+.flower40 { top: 530px; left: 25%; transform: scale(0.4) rotate(-75deg); }
+
+.flower41 { top: 550px; left: 8%; transform: scale(0.4) rotate(135deg); }
+.flower42 { top: 575px; left: 18%; transform: scale(0.5) rotate(-165deg); }
+.flower43 { top: 600px; left: 28%; transform: scale(0.6) rotate(195deg); }
+.flower44 { top: 625px; left: 38%; transform: scale(0.4) rotate(-180deg); }
+.flower45 { top: 650px; left: 48%; transform: scale(0.5) rotate(210deg); }
+.flower46 { top: 675px; left: 58%; transform: scale(0.6) rotate(-195deg); }
+.flower47 { top: 700px; left: 68%; transform: scale(0.4) rotate(240deg); }
+.flower48 { top: 725px; left: 78%; transform: scale(0.5) rotate(-210deg); }
+.flower49 { top: 750px; left: 88%; transform: scale(0.6) rotate(270deg); }
+.flower50 { top: 760px; left: 98%; transform: scale(0.4) rotate(-240deg); }
+
+.flower51 { top: 565px; left: 13%; transform: scale(0.5) rotate(-210deg); }
+.flower52 { top: 590px; left: 23%; transform: scale(0.6) rotate(-220deg); }
+.flower53 { top: 615px; left: 33%; transform: scale(0.4) rotate(-190deg); }
+.flower54 { top: 640px; left: 43%; transform: scale(0.5) rotate(-243deg); }
+.flower55 { top: 665px; left: 53%; transform: scale(0.6) rotate(-230deg); }
+.flower56 { top: 690px; left: 63%; transform: scale(0.4) rotate(-198deg); }
+.flower57 { top: 715px; left: 73%; transform: scale(0.5) rotate(-186deg); }
+.flower58 { top: 740px; left: 83%; transform: scale(0.6) rotate(-190deg); }
+.flower59 { top: 765px; left: 93%; transform: scale(0.4) rotate(-242deg); }
+.flower60 { top: 790px; left: 3%; transform: scale(0.5) rotate(-174deg); }
+
+@keyframes floatUp {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(15px, -60vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-15px, -120vh);
+        opacity: 0;
+    }
+}
+
+.flower:nth-child(odd)  { animation-duration: 22s; }
+.flower:nth-child(even) { animation-duration: 28s; }
+
+.flower:nth-child(3n) { animation-duration: 18s; }
+.flower:nth-child(4n) { animation-duration: 32s; }
+.flower:nth-child(5n) { animation-duration: 26s; }
